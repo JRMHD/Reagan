@@ -1,107 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>layout table</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Table</title>
 </head>
 <style>
-    * {
-      box-sizing: border-box;
-    }
-    
-<body>
-    body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-header {
-  background-color: rgb(24, 40, 218);
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-
-nav {
-  float: right;
-  width: 30%;
-  height: 300px; 
-  background: rgb(24, 24, 25);
-  padding: 20px;
-}
-
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; 
-}
-
-
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-footer {
-  background-color: rgb(62, 60, 60);
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
+  * {
+    box-sizing: border-box;
   }
-}
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  header {
+    background-color: rgb(24, 40, 218);
+    /* padding: 1px; */
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    margin: 0%;
+  }
+
+
+  nav {
+    float: right;
+    width: 30%;
+    height: 300px;
+    background-color: rgb(24, 40, 218);
+    padding: 20px;
+    height: 640px;
+    color: white;
+    top: 20px;
+  }
+
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 500px;
+  }
+
+
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  footer {
+    background-color: rgb(24, 40, 218);
+  }
+
+  .footer {
+    padding: 10px;
+    /* text-align: center; */
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+  }
+
+
+  @media (max-width: 600px) {
+
+    nav,
+    article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .flex-containter {
+    display: flex;
+  }
+
+  .nav-bar {
+    height: 100%;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: rgb(251, 255, 0);
+    font-size: larger;
+    text-decoration: underline;
+
+  }
+
 </style>
 </head>
+
 <body>
+  <section style="padding-top: 0px;margin-top:0%;">
+    <nav>
+      <ul class="nav-bar" style="padding-top: 40px;">
+        <li><a href="#">Nairobi</a></li>
+        <li><a href="#">Mombasa</a></li>
+        <li><a href="#">Kisumu</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h2>Cities</h2>
+    </header>
+    <div class="article">
 
-<h2>Reagan Layout Float</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio numquam deserunt vero, quaerat recusandae earum fuga sunt esse iure sit nisi ratione minus ipsam quia placeat doloribus, maxime sequi reprehenderit..</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas odit nam doloremque aspernatur inventore tempora eveniet quod nostrum vel cumque? Ipsum exercitationem odit at excepturi provident porro quam dolorum saepe! </p>
+      <article>
+        <h1>Nairobi</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam porro aut, neque nesciunt nulla voluptate
+          dolorem, labore assumenda cum facere, dolor reprehenderit fugiat corporis modi vero est. Culpa, fuga ex?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptas. Consequatur illum reiciendis
+          vitae beatae quisquam, officiis, temporibus repellendus voluptates doloremque consequuntur distinctio velit
+          delectus eos ipsam optio aspernatur aliquam.</p>
+      </article>
+      <h2>Reagan Layout Float</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio numquam deserunt vero, quaerat recusandae
+        earum
+        fuga sunt esse iure sit nisi ratione minus ipsam quia placeat doloribus, maxime sequi reprehenderit..</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas odit nam doloremque aspernatur inventore
+        tempora
+        eveniet quod nostrum vel cumque? Ipsum exercitationem odit at excepturi provident porro quam dolorum saepe! </p>
 
-<header>
-  <h2>Cities</h2>
-</header>
 
-<section>
-  <nav>
-    <ul>
-      <li><a href="#">Nairobi</a></li>
-      <li><a href="#">Mombasa</a></li>
-      <li><a href="#">Kisumu</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>Nairobi</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam porro aut, neque nesciunt nulla voluptate dolorem, labore assumenda cum facere, dolor reprehenderit fugiat corporis modi vero est. Culpa, fuga ex?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptas. Consequatur illum reiciendis vitae beatae quisquam, officiis, temporibus repellendus voluptates doloremque consequuntur distinctio velit delectus eos ipsam optio aspernatur aliquam.</p>
-  </article>
-</section>
 
-<footer>
-  <p>@Reagan</p>
-</footer>
+  </section>
 
-    
+  </div>
+  <footer class="flex-containter">
+    <div class="footer">
+
+      <div>
+        <h3>More Links</h3>
+        <ul>
+          <li>Home Page</li>
+          <li>Blogs</li>
+          <li>Login</li>
+          <li>Fill Form</li>
+        </ul>
+      </div>
+      <!-- div number 2 -->
+      <div>
+        <h3>Our Services</h3>
+        <ul>
+          <li>Buy Cars</li>
+          <li>Buy Home Utensils</li>
+          <li>Buy Electronics</li>
+          <li>Buy iPad</li>
+        </ul>
+      </div>
+      <!-- last div -->
+      <div>
+        <h3>Contact US</h3>
+        <ul>
+          <li>Email Us</li>
+          <li>Report Issues</li>
+          <li>Call Us</li>
+          <li>Our Social Media Platforms</li>
+      </div>
+      </ul>
+
+    </div>
+  </footer>
+
+
 </body>
+
 </html>
