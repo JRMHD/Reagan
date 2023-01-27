@@ -4,28 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reagan html</title>
+    <title>layout table</title>
 </head>
-<body style="background-color:rgb(27, 199, 222);">
-
-
-    <h style="background-color:powderblue;">This is a heading</h1>WELCOME TO JRMHD</h>
-    <p style="background-color:rgb(194, 135, 124);">This is a paragraph.>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto exercitationem adipisci voluptas veritatis, possimus minima quibusdam id nam suscipit.
-         Consequuntur provident doloremque laboriosam! Natus dignissimos quos, eaque error quam beatae!
-         <br>
-         <a  href="#">link</a>
-         <img style="border-radius:50%; border:9px; background-color: rgb(83, 84, 147);" height="30%" width="30%" src="img\img.png" alt="gui">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere temporibus saepe iste quibusdam.
-          Esse, minus explicabo voluptatem expedita consectetur nisi eos magnam debitis omnis assumenda illum eveniet. Repellat, consectetur veritatis.
-    </p>
+<style>
+    * {
+      box-sizing: border-box;
+    }
     
-    <!-- <a href="tel:+"> 0706378245</a> -->
-    <a href="tel:+254799899989">call me</a> <br><hr>
-    <a href="https://google.com/">Go google</a><br><hr>
-    <a href="https://google.com/" target="_blank" rel="noopener noreferrer">open google in a new page</a><br><hr>
-    <a href="mailto:reaganmukabana@gmail.com">Email me</a>
-    <p>Email me:reaganmukabana@gmail.com</p>
-    <p style="color:rgb(226, 227, 226);">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis rem accusamus necessitatibus maiores distinctio debitis repellat, quibusdam iusto placeat eius officia cupiditate in neque corporis esse facere molestiae, est animi.</p>
+<body>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+  background-color: rgb(24, 40, 218);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+nav {
+  float: right;
+  width: 30%;
+  height: 300px; 
+  background: rgb(24, 24, 25);
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; 
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-color: rgb(62, 60, 60);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Reagan Layout Float</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio numquam deserunt vero, quaerat recusandae earum fuga sunt esse iure sit nisi ratione minus ipsam quia placeat doloribus, maxime sequi reprehenderit..</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas odit nam doloremque aspernatur inventore tempora eveniet quod nostrum vel cumque? Ipsum exercitationem odit at excepturi provident porro quam dolorum saepe! </p>
+
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Nairobi</a></li>
+      <li><a href="#">Mombasa</a></li>
+      <li><a href="#">Kisumu</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Nairobi</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam porro aut, neque nesciunt nulla voluptate dolorem, labore assumenda cum facere, dolor reprehenderit fugiat corporis modi vero est. Culpa, fuga ex?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptas. Consequatur illum reiciendis vitae beatae quisquam, officiis, temporibus repellendus voluptates doloremque consequuntur distinctio velit delectus eos ipsam optio aspernatur aliquam.</p>
+  </article>
+</section>
+
+<footer>
+  <p>@Reagan</p>
+</footer>
+
+    
 </body>
 </html>
